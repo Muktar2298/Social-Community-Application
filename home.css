@@ -14,13 +14,13 @@ body {
 }
 #homepage-container {
   width: 100%;
-  height: 100%;
+  height: 1000px;
 }
 
 /* ------------Header Start------------ */
 .header {
   width: 100%;
-  height: 100%;
+  height: 700px;
   background-color: #404eed;
 }
 /* -----Navbar----- */
@@ -136,7 +136,7 @@ body {
 .header-content-container {
   margin-top: 5%;
   width: 100%;
-  height: 500px;
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -150,7 +150,6 @@ body {
 .header-content {
   padding: 1.5rem;
 }
-
 
 .header-content-btn {
   position: relative;
@@ -171,3 +170,28 @@ body {
 .header-content-btn button:hover {
   box-shadow: 5px 5px 5px #b1adad59;
 }
+
+/* ------Header Part End----- */
+
+/* ------Body Part Start------- */
+
+/* ---info--- */
+.info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  height: 500px;
+}
+.info-img img {
+  width: 100%;
+  margin: 0 auto;
+}
+.info .info-content {
+  position: relative;
+  top: 30%;
+}
+.info-content h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px #ebe6e6cc;
+}
+/* ------Body Part End------- */

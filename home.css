@@ -11,6 +11,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  background-color: #404eed;
 }
 #homepage-container {
   width: 100%;
@@ -30,6 +31,8 @@ body {
   justify-content: space-between;
   align-items: center;
   color: white;
+  margin-top: 1%;
+  width: 90%;
 }
 
 .brand-title {
@@ -118,7 +121,6 @@ body {
 
 .navbar .navbar-authentication {
   width: 100px;
-  margin-right: 5%;
   cursor: pointer;
   font-size: 1rem;
   font-weight: bold;
@@ -134,7 +136,7 @@ body {
 
 /* ---Header Content--- */
 .header-content-container {
-  margin-top: 5%;
+  margin-top: 2%;
   width: 100%;
   height: 100%;
   display: grid;
@@ -148,7 +150,7 @@ body {
 }
 
 .header-content {
-  padding: 1.5rem;
+  padding: 14%;
 }
 
 .header-content-btn {
@@ -175,23 +177,82 @@ body {
 
 /* ------Body Part Start------- */
 
-/* ---info--- */
-.info {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+/* ---info-1--- */
+.info-1 {
   width: 100%;
-  height: 500px;
+  height: 650px;
+  background-color: #ffffff;
 }
-.info-img img {
-  width: 100%;
+.info-1-container {
+  width: 80%;
+  height: 100%;
   margin: 0 auto;
 }
-.info .info-content {
+.info-1-img {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+.info-1-img img {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.info-1-content {
   position: relative;
-  top: 30%;
+  top: 18%;
+  transform: translate-(-50%);
+  float: left;
+  width: 40%;
+  height: 100%;
+  margin-left: 5%;
 }
-.info-content h1 {
-  font-size: 3rem;
-  text-shadow: 2px 2px #ebe6e6cc;
+.info-1-content h1 {
+  font-size: 3.8rem;
 }
+.info-1-content p {
+  font-size: 1.5rem;
+}
+
+/* --info-2-- */
+.info-2 {
+  width: 100%;
+  height: 650px;
+  background-color: #f6f6f6;
+}
+
+.info-2-container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.info-2-content {
+  position: relative;
+  top: 18%;
+  transform: translate-(-50%);
+  float: left;
+  width: 40%;
+  height: 100%;
+  padding: 6%;
+  margin-left: 2%;
+}
+.info-2-content h1 {
+  font-size: 3.8rem;
+}
+.info-2-content p {
+  font-size: 1.5rem;
+}
+
+.info-2-img {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+.info-2-img img {
+  width: 100%;
+  height: 100%;
+  margin-left: 5%;
+}
+
 /* ------Body Part End------- */

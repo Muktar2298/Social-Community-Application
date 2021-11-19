@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+}
+.container {
+  width: 100%;
+  height: 928px;
+  background-image: url(./images/loginImages/i-13.gif);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.login-container {
+  width: 60%;
+  height: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.login-method {
+  position: relative;
+  background-color: #4c80ff;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.login-with-manually {
+  width: 100%;
+  height: 70%;
+  background-color: #4c80ff;
+  border-top-left-radius: 1rem;
+}
+.login-with-others {
+  width: 100%;
+  height: 30%;
+  background-color: #4c80ff;
+  border-bottom-left-radius: 1rem;
+}
+.login-instructions {
+  position: relative;
+  background: url(./images/loginImages/i-7.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-color: #4c80ff;
+  background-blend-mode: darken;
+  color: white;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.login-instructions .login-content {
+  width: 75%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.login-content h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 2rem;
+}
+
+.login-content p {
+  color: #eee8e8e3;
+}

@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="login.css" />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
     <title>Login</title>
   </head>
   <body>
@@ -12,8 +19,75 @@
     <section class="container">
       <div class="login-container">
         <div class="login-method">
-          <div class="login-with-manually"></div>
-          <div class="login-with-others"></div>
+          <div class="login-with-manually">
+            <!-- Login intro -->
+            <div class="login-intro">
+              <h3>WELCOME TO</h3>
+              <br />
+              <h1>WEB LEARNERS</h1>
+              <br />
+              <p>
+                Log in to get in the moment updates on the things that interest
+                you.
+              </p>
+            </div>
+
+            <!-- login info -->
+            <div class="login-info">
+              <form action="#">
+                <input
+                  type="text"
+                  name="username"
+                  id=""
+                  placeholder="       Username"
+                /><br /><br />
+                <input
+                  type="password"
+                  name="password"
+                  id=""
+                  placeholder="        Password"
+                /><br /><br />
+                <input type="submit" value="SIGN IN" />
+              </form>
+              <br />
+              <p>
+                <span style="color: grey"
+                  >Don't have an account ?
+                  <span
+                    style="
+                      margin-left: 1%;
+                      color: #0533a8;
+                      font-weight: bold;
+                      cursor: pointer;
+                    "
+                    >Sign Up Now</span
+                  ></span
+                >
+              </p>
+            </div>
+          </div>
+          <div class="login-with-others">
+            <!-- or  -->
+            <div class="or">
+              <div class="line line-1"></div>
+              <p>Or</p>
+              <div class="line line-2"></div>
+            </div>
+            <!-- Login With Social Media -->
+            <div class="social-media">
+              <br /><br />
+              <div class="social-content">
+                <p>Continue with social media</p>
+              </div>
+              <br />
+              <div class="social-icon">
+                <i class="fab fa-google" style="color: #db4437"></i>
+                <i class="fab fa-facebook" style="color: #4267b2"></i>
+                <i class="fab fa-twitter" style="color: #1da1f2"></i>
+                <i class="fab fa-github"></i>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="login-instructions">
           <div class="login-content">

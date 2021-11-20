@@ -30,22 +30,110 @@ body {
 
 .login-method {
   position: relative;
-  background-color: #4c80ff;
+  background-color: white;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
 }
 .login-with-manually {
   width: 100%;
   height: 70%;
-  background-color: #4c80ff;
   border-top-left-radius: 1rem;
 }
+.login-intro {
+  width: 65%;
+  margin: 0 auto;
+  text-align: center;
+  height: 40%;
+  padding-top: 10%;
+  overflow: visible;
+}
+.login-intro h3 {
+  color: #8b8686;
+  text-shadow: 0px 2px #b8b5b5de;
+}
+.login-intro h1 {
+  color: #0533a8;
+  text-shadow: 0px 2px #4d66a56e;
+  font-weight: bold;
+}
+.login-intro p {
+  color: #808080d2;
+}
+.login-info {
+  width: 65%;
+  height: 60%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10%;
+}
+.login-info input {
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 35px;
+  background-color: #fdfdfdc7;
+  border: none;
+  box-shadow: #f4f5f6 3px 3px 6px 0px inset, #fffffffd -3px -3px 6px 1px inset;
+}
+.login-info [type="submit"] {
+  background-color: #0533a8;
+  color: white;
+  box-shadow: 5px 5px 10px #c3c0c0f3 !important;
+  cursor: pointer;
+}
+
+/* --login with others-- */
 .login-with-others {
   width: 100%;
   height: 30%;
-  background-color: #4c80ff;
   border-bottom-left-radius: 1rem;
 }
+.login-with-others .or {
+  display: grid;
+  grid-template-columns: 45% 10% 45%;
+  width: 65%;
+  margin: 0 auto;
+  text-align: center;
+  color: #808080e5;
+  font-weight: 550;
+}
+.line-1 {
+  background-color: grey;
+  height: 1px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.line-2 {
+  background-color: grey;
+  height: 1px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*---Login With Social Media--*/
+.social-media {
+  width: 65%;
+  height: 175px;
+  margin: 0 auto;
+  /* background-color: chocolate; */
+  text-align: center;
+}
+.social-media .social-content {
+  color: #808080e3;
+  font-weight: 550;
+}
+.social-icon i {
+  padding: 0.8rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 10px 10px 10px #f0efef;
+}
+
+/* --login instructions-- */
+
 .login-instructions {
   position: relative;
   background: url(./images/loginImages/i-7.jpg);
@@ -71,6 +159,7 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 2rem;
+  text-shadow: 0px 2px #ffffffab;
 }
 
 .login-content p {

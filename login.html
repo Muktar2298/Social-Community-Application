@@ -15,9 +15,11 @@
     <title>Login</title>
   </head>
   <body>
-    <!-- Login Page Container -->
+    <!-- Container -->
     <section class="container">
-      <div class="login-container">
+      <!-- Login Start -->
+      <div class="login-container" id="login">
+        <!-- Login Methods -->
         <div class="login-method">
           <div class="login-with-manually">
             <!-- Login intro -->
@@ -60,6 +62,7 @@
                       font-weight: bold;
                       cursor: pointer;
                     "
+                    id="signUpNow"
                     >Sign Up Now</span
                   ></span
                 >
@@ -89,6 +92,7 @@
             </div>
           </div>
         </div>
+        <!-- Login Instructions -->
         <div class="login-instructions">
           <div class="login-content">
             <h1>WEB LEARNERS</h1>
@@ -101,6 +105,106 @@
           </div>
         </div>
       </div>
+      <!-- Login End -->
+
+      <!-- SignUp Start -->
+      <div class="login-container" id="signup">
+        <!-- Login Instruction -->
+        <div
+          class="login-instructions"
+          style="
+            border-top-left-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 0;
+          "
+        >
+          <div class="login-content">
+            <h1>WEB LEARNERS</h1>
+            <br />
+            <p>
+              Web Learners is a community of different web developers.Where we
+              can discuss our projects,share our opinion & creating open & free
+              source projects.
+            </p>
+          </div>
+        </div>
+
+        <!-- SignUp Methods -->
+        <div
+          class="login-method"
+          style="
+            border-top-right-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+          "
+        >
+          <div class="login-with-manually">
+            <!-- SignUp intro -->
+            <div class="login-intro">
+              <h3>WELCOME TO</h3>
+              <br />
+              <h1>WEB LEARNERS</h1>
+              <br />
+              <p>
+                Signup for accessing our web application social site and to in
+                the moment updates on the things that interest you.
+              </p>
+            </div>
+
+            <!-- SignUp info -->
+            <div class="login-info">
+              <form action="#">
+                <input
+                  type="text"
+                  name="name"
+                  id=""
+                  placeholder="       Name"
+                /><br /><br />
+                <input
+                  type="text"
+                  name="username"
+                  id=""
+                  placeholder="       Username"
+                /><br /><br />
+                <input
+                  type="email"
+                  name="email"
+                  id=""
+                  placeholder="       Enter your email"
+                /><br /><br />
+                <input
+                  type="password"
+                  name="password"
+                  id=""
+                  placeholder="        Password"
+                /><br /><br />
+                <input type="submit" value="SIGN UP" />
+              </form>
+              <br />
+              <p>
+                <span style="color: grey"
+                  >Already have an account ?
+                  <span
+                    style="
+                      margin-left: 1%;
+                      color: #0533a8;
+                      font-weight: bold;
+                      cursor: pointer;
+                    "
+                    id="logInNow"
+                    >Login In Now</span
+                  ></span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SignUp End -->
     </section>
+    <!-- JavaScript -->
+    <script src="./login.js"></script>
   </body>
 </html>

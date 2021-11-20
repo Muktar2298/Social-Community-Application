@@ -27,6 +27,9 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+#login{
+  visibility: visible;
+}
 
 .login-method {
   position: relative;
@@ -164,4 +167,9 @@ body {
 
 .login-content p {
   color: #eee8e8e3;
+}
+
+/* ---Sign Up--- */
+#signup {
+  visibility: hidden;
 }

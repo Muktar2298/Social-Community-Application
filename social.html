@@ -37,12 +37,60 @@
           <input type="text" name="" id="" placeholder="Search" />
         </div>
         <!-- User Icon -->
-        <div class="nav-user-icon online">
+        <div class="nav-user-icon online" onclick="settingsMenuToggler()">
           <img src="./images/2.jpg" alt="" />
+        </div>
+      </div>
+
+      <!--------- Settings Menu ---------->
+      <div class="settings-menu">
+
+
+<!---- Dark Btn---->
+<div id="dark-btn">
+  <span></span>
+</div>
+
+
+        <div class="settings-menu-inner">
+          <div class="user-profile">
+            <img src="./images/2.jpg" alt="" />
+            <div>
+              <p>Nishat Hasan Muktar</p>
+              <a href="#">See your Profile</a>
+            </div>
+          </div>
+          <hr>
+          <div class="user-profile">
+            <img src="./images/feedback.png" alt="" />
+            <div>
+              <p>Give feedback</p>
+              <a href="#">Help us to improve the Web Lerners Community</a><br>
+            </div>
+          </div>
+          <hr>
+          <div class="settings-links">
+            <img src="./images/setting.png" alt="" class="settings-icon">
+            <a href="#">Settings & Privacy <img src="./images/arrow.png" alt="" width="10px"></a>
+          </div>
+          <div class="settings-links">
+            <img src="./images/help.png" alt="" class="settings-icon">
+            <a href="#"> Help & Support<img src="./images/arrow.png" alt="" width="10px"></a>
+          </div>
+          <div class="settings-links">
+            <img src="./images/display.png" alt="" class="settings-icon">
+            <a href="#">Display & Accesibility<img src="./images/arrow.png" alt="" width="10px"></a>
+          </div>
+          <div class="settings-links">
+            <img src="./images/logout.png" alt="" class="settings-icon">
+            <a href="#">Log Out<img src="./images/arrow.png" alt="" width="10px"></a>
+          </div>
         </div>
       </div>
     </nav>
     <!-------------- Header Part End ----------------->
+
+
 
     <!-------------- Main Part Start ----------------->
 
@@ -279,10 +327,10 @@
       <!-- Load More -->
       <button type="button" class="load-more-btn">Load More</button>
       </div>
-      <!-----------Main Content----------->
+      <!-------------Main Content End------------>
 
 
-      <!------------ right sidebar ---------->
+      <!-------------right sidebar -------------->
       <div class="right-sidebar">
         <!-- sidebar title for events-->
         <div class="sidebar-title">
@@ -367,9 +415,14 @@
 
 
 
-    <!-----------Footer------------>
+    <!------------------Footer---------------------->
     <div class="footer">
       <p>Copyright 2021 - Web Learnerrs Community</p>
     </div>
+
+
+
+    <!-----------------Script File ---------------->
+    <script src="./social.js"></script>
   </body>
 </html>

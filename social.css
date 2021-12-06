@@ -3,9 +3,24 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* ----custom style---- */
+:root {
+  --body-color: #efefef;
+  --nav-color: #1876f2;
+  --bg-color: #fff;
+}
+
+.dark-theme {
+  --body-color: #0a0a0a;
+  --nav-color: #000;
+  --bg-color: #000;
+}
+
 body {
   font-family: "poppins", sans-serif;
-  background-color: #efefef;
+  background-color: var(--body-color);
+  transition: background 0.3s;
 }
 
 /* ---------------Header Start-------------- */
@@ -13,7 +28,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #1876f2;
+  background-color: var(--nav-color);
   padding: 5px 5%;
   position: sticky;
   top: 0;
@@ -86,6 +101,83 @@ nav {
   top: 0;
   right: 0;
 }
+
+/* ---Settings Menu----*/
+.settings-menu {
+  position: absolute;
+  width: 90%;
+  max-width: 350px;
+  background-color: var(--bg-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  overflow: hidden;
+  top: 105%;
+  right: 5%;
+  max-height: 0;
+  transition: max-height 0.3s;
+}
+.settings-menu-height {
+  max-height: 450px;
+}
+
+.settings-menu-inner {
+  padding: 20px;
+}
+
+.settings-menu hr {
+  border: 0;
+  height: 1px;
+  background-color: #9a9a9a;
+  margin: 10px 0;
+}
+.user-profile a {
+  font-size: 12px;
+  color: #1876f2;
+  text-decoration: none;
+}
+.settings-links {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.settings-links .settings-icon {
+  width: 45px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.settings-links a {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  color: #626262;
+}
+
+/* ---dark btn--- */
+#dark-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #ccc;
+  width: 45px;
+  border-radius: 15px;
+  padding: 2px 3px;
+  cursor: pointer;
+  display: flex;
+  transition: padding-left 0.3s, backgrond 0.3s;
+}
+#dark-btn span {
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border-radius: 50%;
+  display: inline-block;
+}
+#dark-btn.dark-btn-on {
+  padding-left: 23px;
+  background: #0a0a0a;
+}
 /* -----------------Header End------------- */
 
 /* ---------------Main Part Start------------- */
@@ -106,7 +198,7 @@ nav {
   position: sticky;
   top: 70px;
   align-self: flex-start;
-  background: #fff;
+  background: var(--bg-color);
   padding: 20px;
   border-radius: 4px;
   color: #626262;
@@ -294,7 +386,7 @@ nav {
 /*----- Users Write Posts Container---- */
 .write-post-container {
   width: 100%;
-  background: #fff;
+  background: var(--bg-color);
   border-radius: 6px;
   padding: 20px;
   color: #626262;
@@ -353,7 +445,7 @@ nav {
 /* ---All Users Posts Container--- */
 .post-container {
   width: 100%;
-  background: #fff;
+  background: var(--bg-color);
   border-radius: 6px;
   padding: 20px;
   columns: #626262;
